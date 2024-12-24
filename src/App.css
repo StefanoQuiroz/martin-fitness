@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #ff662d;
+    --dark-color: #37383c;
+    --darklight-color: #3a3b3f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+h1,
+h2,
+h3,
+h5,
+p {
+    margin-bottom: 0 !important;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* *********************************************** */
+.logo {
+    width: 16%;
+}
+.Nav_main {
+    position: relative;
+    z-index: 100;
+    padding: 1rem 0;
+    background: #161616;
+}
+.Nav_main a {
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: 0.4px;
+    /* font-weight: 300; */
+}
+.Nav_main li {
+    padding: 0 0.4rem;
+}
+a:hover,
+a:focus {
+    color: var(--primary-color) !important;
+}
+.btn1 {
+    border: 0;
+    padding: 0.7rem 1.55rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    border: 2px solid transparent;
+}
+.btn1:hover {
+    background-color: var(--dark-color) !important;
+    transition: 0.3s linear;
+    transform: scale(1.03);
+    border: 2px solid var(--primary-color);
+}
+/* *********************************************** */
+.Hero {
+    background-image: url('./Assets/Home1.jpg');
+    height: 700px;
+    background-position: center -170px; /* Movemos la imagen hacia abajo 120px */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10rem;
+    align-items: center;
+    width: 100%;
+}
+
+.Hero1 {
+    background-image: url('./Assets/HomeBack1.jpg');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    /* top: 0; */
+    padding-top: 3.2rem;
+}
+.Hero2 {
+    background-image: url('./Assets/HomeBack1.jpg');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    /* top: 0; */
+    padding-top: 3rem;
+}
+.Hero2_col2 img {
+    width: 85%;
+}
+span {
+    color: #ff662d;
+}
+.Hero_col1 h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+}
+.Hero_col1 p {
+    font-size: 1.2rem;
+    padding: 1.5rem 0;
+    color: #fff;
+}
+.Hero_col2 img {
+    width: 100%;
+}
+.btn0 {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.2rem;
+}
+.btn0:hover {
+    background-color: var(--darklight-color);
+    transition: 0.3s linear;
+    transform: scale(1.03);
+}
+.play_btn {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    padding: 0 1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.play_btn img {
+    width: 50px;
+    padding: 0.5rem 0.5rem 0.5rem 0.6rem;
+    border-radius: 100%;
+    background: var(--dark-color);
+    margin: 0 0.5rem;
+}
+.play_btn img:hover {
+    transition: 0.3s linear;
+    transform: scale(1.2);
+    background: var(--primary-color);
+}
+/* *********************************************** */
+.Fitness_Goal {
+    background-color: var(--dark-color);
+    color: #fff;
+    padding: 2.3rem 0;
+}
+.fitness_col1 h1 {
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.fitness_col1 p {
+    letter-spacing: 0.3px;
+    font-size: 1.4rem;
+    padding-top: 0.3rem;
+}
+/* *********************************************** */
+.Fitness_Goal1 {
+    background-color: var(--darklight-color);
+    color: #fff;
+    padding: 4rem 0;
+    position: relative;
+}
+.fitness_col3 img {
+    border-radius: 10px;
+}
+.popup {
+    display: flex;
+    gap: 1rem;
+    align-items: end;
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem;
+    width: 35%;
+    border-radius: 10px;
+    position: absolute;
+    top: 60%;
+    left: 70%;
+}
+.fitness_col4 {
+    padding: 1rem 4rem;
+}
+.fitness_col4 p {
+    padding: 0.4rem 0;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+}
+.main_heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+/* *********************************************** */
+.BestOffers {
+    background: var(--dark-color);
+    color: #fff;
+    padding: 4rem 0;
+}
+.bestoffer_col1 {
+    padding: 1.5rem;
+    background: #464646;
+    margin: 0.5rem;
+    border-radius: 15px;
+}
+.bestoffer_col1 p {
+    padding: 0.5rem 0 0.9rem 0;
+    font-size: 0.95rem;
+}
+.bestoffer_col1 img {
+    width: 25%;
+}
+.bestoffer_col1 button {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+}
+.bestoffer_col1:hover {
+    background: var(--primary-color);
+    transition: 0.3s linear;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+/* *********************************************** */
+.services {
+    background-color: var(--darklight-color);
+    color: #fff;
+    padding: 6rem 0;
+}
+.services_col1 p {
+    padding-right: 3rem;
+}
+.services_col2 img {
+    width: 100%;
+}
+.form-check-input {
+    border-radius: 100% !important;
+    width: 1.4em;
+    height: 1.4em;
+    cursor: pointer;
+}
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.form-check-input:focus {
+    box-shadow: none !important;
+}
+/* *********************************************** */
+.BestPlan {
+    background-color: var(--dark-color);
+    color: #fff;
+    padding: 6rem 0;
+    text-align: center;
+}
+.bestplan_col1 {
+    padding: 1.5rem;
+    background: #464646;
+    margin: 0.7rem;
+    border-radius: 15px;
+}
+.bestplan_col1:hover {
+    transform: scale(1.03);
+    transition: 0.3s linear;
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+.bestplan_col2 {
+    background: var(--primary-color);
+    position: relative;
+    padding: 2.2rem 1.5rem;
+}
+.bestplan_detail p {
+    padding: 0.6rem 0;
+}
+.bestplan_detail img {
+    padding-right: 1rem;
+    width: 40px;
+}
+.bestplan_col1 h5 {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+.bestplan_col1 h1 {
+    font-size: 3rem;
+}
+.bestplan_col1 span {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #fff !important;
+}
+.btn3 {
+    border: 1px solid #fff;
+    padding: 0.7rem 3.4rem;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    letter-spacing: 0.4px;
+}
+.btn4 {
+    padding: 0.75rem 3.4rem;
+    border: 0;
+    background-color: #fff;
+    color: var(--primary-color);
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    letter-spacing: 0.4px;
+}
+.btn4:hover,
+.btn3:hover {
+    transform: scale(1.03);
+    transition: 0.3s linear;
+    background-color: var(--dark-color);
+    color: #fff;
+}
+.btn3:hover {
+    border: 1px solid var(--dark-color);
+}
+.BestPlan_h3 {
+    position: absolute;
+    top: -20px;
+    left: 90px;
+    background: #fff;
+    color: #000;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+}
+/* *********************************************** */
+.testimonial {
+    background: var(--dark-color);
+    color: #fff;
+}
+.testimonial_col2 img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+.test_main {
+    background: #464646;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+}
+.stars i {
+    color: #ffd700;
+    font-size: 1.3rem;
+    padding-right: 0.35rem;
+}
+.stars i:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+    transition: 0.3s linear;
+}
+.test_p1 {
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    font-size: 0.9rem;
+}
+.test_p2 {
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+.test_p3 {
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    font-size: 1.2rem;
+}
+.test_p3 i {
+    color: #ffd700;
+    font-size: 1.3rem;
+    padding-right: 0.6rem;
+}
+.test_images img {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    border: 2px solid #000;
+    margin-left: -0.8rem;
+}
+/* *********************************************** */
+.Footer {
+    background-color: var(--darklight-color);
+    color: #fff;
+}
+.footer_col1 li {
+    padding: 0.4rem 0;
+}
+.ft_h5 {
+    padding-bottom: 1.2rem;
+}
+.footer_col2 i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+.footer_col2 p {
+    padding: 0 1rem;
+    word-wrap: break-word;
+}
+.footer_col3 {
+    /* padding-left: 3rem; */
+}
+.footer_col3 input {
+    border: 0;
+    border-radius: 30px;
+}
+::placeholder {
+    font-size: 0.9rem;
+}
+.input-group {
+    background-color: #fff;
+    padding: 0.3rem 0.5rem 0.3rem 0.3rem;
+    border-radius: 30px;
+}
+#button-addon2 {
+    border: 0;
+    background: transparent;
+}
+#button-addon2 i {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 100%;
+}
+.footer_row1 {
+    border-bottom: 1px solid #646464;
+}
+.footer_img {
+    width: 50%;
+}
+.footer_row2 i {
+    font-size: 1.4rem;
+    padding: 0 0.4rem;
+}
+.footer_row2 i:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.footer_row2 span {
+    color: #fff;
+    font-weight: 500;
+}
+/* *********************************************** */
+.navbar-toggler:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+/* *********************************************** */
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .logo {
+        width: 150px;
+    }
+    .navbar-toggler img {
+        width: 30px;
+    }
+    .navbar-toggler {
+        padding: 0;
+        cursor: pointer;
+    }
+    .Nav_main {
+        padding: 0.5rem 1rem 0.5rem 0;
+    }
+    /* *********************************************** */
+    .Hero_col1 h1 {
+        font-size: 3.4rem;
+    }
+    .Hero {
+        height: 700px;
+        background-position: center -50px; /* Ajustado para móviles */
+        padding: 3rem 1rem;
+    }
+    .Hero1,
+    .Hero2 {
+        padding: 3rem 1rem;
+        height: 700px;
+    }
+    .Hero_col2 img,
+    .Hero2_col2 img {
+        display: none !important;
+    }
+
+    .play_btn {
+        margin: 2.5rem 0;
+        padding: 0;
+    }
+    /* *********************************************** */
+    .Fitness_Goal {
+        padding: 2rem 1rem;
+    }
+    .fitness_col1,
+    .fitness_col2 img {
+        padding: 1rem 0;
+    }
+    .fitness_col1 h1 {
+        font-size: 2.4rem;
+    }
+    .popup {
+        padding: 0.3rem;
+        width: 63%;
+        top: -15%;
+        left: 17%;
+    }
+    .fitness_col4 {
+        padding: 2rem 1rem;
+    }
+    .Fitness_Goal1 {
+        padding: 6rem 0 3rem 0;
+    }
+    /* *********************************************** */
+    .services_col1 p {
+        padding-right: 0rem;
+    }
+    .services {
+        padding: 5rem 1rem;
+    }
+    /* *********************************************** */
+    .bestplan_col1 {
+        padding: 2rem 0;
+        margin: 1.5rem 0;
+    }
+    .BestPlan_h3 {
+        left: 90px;
+    }
+    .BestPlan {
+        padding: 6rem 0.5rem 4rem;
+    }
+    /* *********************************************** */
+    .testimonial {
+        padding: 4rem 0;
+    }
+    .test_main {
+        padding: 2rem 1rem;
+    }
+    .test_main h5 {
+        /* font-size: 1.1rem; */
+    }
+    .testimonial_col2 img {
+        width: 50px;
+        height: 50px;
+    }
+    /* *********************************************** */
+    .footer_col1,
+    .footer_col2 {
+        padding: 1rem 0;
+    }
+    .footer_row1 {
+        padding-bottom: 4rem !important;
+    }
+    .input-group {
+        margin: 1rem 0 2rem 0;
+    }
+    .footer_row2 {
+        text-align: center;
+        padding: 1rem 0;
+        gap: 1.6rem;
+    }
+    /* *********************************************** */
+}
+/* *********************************************** */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .navbar-toggler {
+        text-align: end;
+    }
+    .logo {
+        width: 22%;
+    }
+    .navbar-toggler img {
+        width: 6%;
+    }
+
+    /* *********************************************** */
+    .Hero_col1 h1 {
+        font-size: 3.6rem;
+    }
+    .hero_h1 {
+        padding-top: 3rem;
+    }
+    .Hero {
+        height: 450px;
+        background-position: center -100px; /* Ajustado para tablets */
+        padding-top: 1.5rem;
+    }
+    .Hero2 {
+        height: 450px;
+        padding-top: 1.5rem;
+    }
+    .Hero_col2 img,
+    .Hero2_col2 img {
+        display: none;
+    }
+    /* *********************************************** */
+    .fitness_col4 {
+        padding: 1rem 2rem;
+    }
+    .main_heading {
+        font-size: 2rem;
+    }
+    .popup {
+        padding: 0.2rem;
+        width: 62%;
+        top: -44px;
+        left: 19%;
+    }
+    p {
+        font-size: 0.9rem !important;
+    }
+    .btn0 {
+        padding: 0.8rem 1.2rem;
+        font-size: 1rem;
+    }
+    /* *********************************************** */
+    .BestPlan_h3 {
+        left: 77px;
+    }
+    .test_main {
+        padding: 3rem;
+    }
+    .testimonial_col1 h1 {
+        font-size: 2.6rem;
+    }
+    /* *********************************************** */
+    /* *********************************************** */
+}
+
+.navbar-toggler {
+    border: none !important;
+    width: 40px !important;
+    height: 40px !important;
+    padding: 8px !important;
+    margin-right: 5px !important;
+}
+
+.navbar-toggler img {
+    width: 100% !important;
+    height: auto !important;
+}
